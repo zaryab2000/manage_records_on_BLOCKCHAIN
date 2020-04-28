@@ -12,7 +12,7 @@ class Main extends Component{
 			  </div>
 			  <div class="card-body">
 			    <h5 class="card-title">Name of Contributor:{record.name}</h5>
-			    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+			    <p class="card-text">Uploaded By: {record.uploader}</p>
 			    <a href="#" class="btn btn-primary">{record.amount}</a>
 			  </div>
 			</div>
