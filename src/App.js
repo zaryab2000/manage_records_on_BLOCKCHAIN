@@ -1,6 +1,7 @@
 import React ,{Component}from 'react';
 import Web3 from 'web3';
 import Navbar from './Navbar'
+import Main from './Main';
 import {SOCIAL_NETWORK_ABI, SOCIAL_NETWORK_ADDRESS} from './config'
 
 import './App.css';
@@ -69,18 +70,17 @@ class App extends Component{
       <Navbar accounts={this.state.account}/>
       </div>
       <div className="container">
-       
-      
        <h1>SOCIAL NETWORK</h1>
        <h1>{this.state.count}</h1>
        <h3>{this.state.account}</h3>
-      <ul>
-        <li>{this.state.records}</li>
-      </ul>
-       
+       </div>
+       <div>
+         <Main records={this.state.records}/>
        </div>
       </header>
     </div>
+
+   
   );
 }
 }
